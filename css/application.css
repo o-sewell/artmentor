@@ -370,8 +370,4 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-body {
-  background: blue;
-  border: 2px solid white; }
-
 /*# sourceMappingURL=application.css.map */
