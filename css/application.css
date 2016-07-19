@@ -370,4 +370,29 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+.banner {
+  position: relative; }
+  .banner__image {
+    width: 100%;
+    display: block;
+    height: auto; }
+  .banner__title {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.875em;
+    font-family: 'Oleo Script', cursive;
+    color: #fff; }
+  .banner__intro {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    transform: translateX(-50%) translateY(-50%); }
+
 /*# sourceMappingURL=application.css.map */
