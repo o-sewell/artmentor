@@ -1,4 +1,37 @@
 
+.navbar {
+  background: $highlight;
+  border: 3px solid $highlight;
+}
+
+.nav {
+  background: $color-secondary;
+  padding-left: 0;
+  margin: 5px 0;
+  text-align: center;
+
+
+  &__item {
+    list-style-type: none;
+    text-decoration: none;
+    padding: em(10px) 0;
+    border: 1px solid black;
+
+    a {
+      font-family: $font-family--primary;
+      font-size: em(18px);
+      color: $color-primary;
+      text-decoration: none;
+      display: block;
+      padding: em(5px);
+
+      &:hover {
+        color: $highlight;
+      }
+    }
+  }
+}
+
 
 .banner {
   position: relative;

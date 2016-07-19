@@ -370,6 +370,30 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+.navbar {
+  background: #CB5239;
+  border: 3px solid #CB5239; }
+
+.nav {
+  background: #EDDC2B;
+  padding-left: 0;
+  margin: 5px 0;
+  text-align: center; }
+  .nav__item {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0.625em 0;
+    border: 1px solid black; }
+    .nav__item a {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 1.125em;
+      color: #5F3C76;
+      text-decoration: none;
+      display: block;
+      padding: 0.3125em; }
+      .nav__item a:hover {
+        color: #CB5239; }
+
 .banner {
   position: relative; }
   .banner__image {
@@ -392,7 +416,7 @@ html {
     top: 60%;
     width: 100%;
     text-align: center;
-    color: #fff;
-    transform: translateX(-50%) translateY(-50%); }
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff; }
 
 /*# sourceMappingURL=application.css.map */
