@@ -1,7 +1,6 @@
 
 .navbar {
   background: $highlight;
-  border: 3px solid $highlight;
 }
 
 .nav {
@@ -46,11 +45,11 @@
   &__title {
   position: absolute;
   left: 50%;
-  top: 45%;
+  top: 40%;
   width: 100%;
   text-align: center;
   transform: translateX(-50%) translateY(-50%);
-  font-size: em(30px);
+  font-size: em(45px);
   font-family: 'Oleo Script', cursive;
   color: $white;
   }
@@ -58,10 +57,145 @@
   &__intro {
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 50%;
     width: 100%;
     text-align: center;
     transform: translateX(-50%) translateY(-50%);
     color: $white;
+    font-size: em(20px);
+    visibility: hidden;
   }
+}
+
+.button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: em(65px);
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+  padding: em(15px) em(35px);
+  cursor: pointer;
+  background: linear-gradient(to bottom,
+  #f83876 0%, #d4326d 100%);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.info {
+  background: $color-primary;
+
+  &__title {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.container {
+  @include container;
+}
+
+.first {
+  @include span(6 of 12);
+  text-align: center;
+
+  @media (min-width: 800px) {
+    @include span(3 of 12);
+  }
+}
+
+.second {
+  @include span(6 of 12 last);
+  text-align: center;
+
+  @media (min-width: 800px) {
+    @include span(3 of 12);
+  }
+}
+
+.third {
+  @include span(6 of 12 last);
+  text-align: center;
+
+  @media (min-width: 800px) {
+    @include span(3 of 12);
+  }
+}
+
+.fourth {
+  @include span(6 of 12);
+  text-align: center;
+
+  @media (min-width: 800px) {
+    @include span(3 of 12 last);
+  }
+}
+
+.learn {
+  fill: $rose;
+
+  &__title {
+    color: $color-secondary;
+  }
+
+  &__text {
+    color: $white;
+  }
+}
+
+.create {
+  fill: $color-secondary;
+
+  &__title {
+    color: $rose;
+  }
+
+  &__text {
+    color: $white;
+  }
+}
+
+.share {
+  fill: $rose;
+
+  &__title {
+    color: $color-secondary;
+  }
+
+  &__text {
+    color: $white;
+  }
+}
+
+.connect {
+  fill: $color-secondary;
+
+  &__title {
+    color: $rose;
+  }
+
+  &__text {
+    color: $white;
+  }
+}
+
+.p {
+  font-family: font-family--primary;
+  padding: em(5px);
+  line-height: 1.2;
+  font-size: em(20px);
+}
+
+.h {
+  text-transform: uppercase;
+  font-size: em(22px);
+}
+
+svg {
+   transition: all .5s ease-in-out;
+}
+svg:hover {
+  fill: $highlight;
+  transform: scale(1.4);
 }

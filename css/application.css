@@ -371,8 +371,7 @@ html {
   box-sizing: inherit; }
 
 .navbar {
-  background: #CB5239;
-  border: 3px solid #CB5239; }
+  background: #CB5239; }
 
 .nav {
   background: #EDDC2B;
@@ -403,20 +402,140 @@ html {
   .banner__title {
     position: absolute;
     left: 50%;
-    top: 45%;
+    top: 40%;
     width: 100%;
     text-align: center;
     transform: translateX(-50%) translateY(-50%);
-    font-size: 1.875em;
+    font-size: 2.8125em;
     font-family: 'Oleo Script', cursive;
     color: #fff; }
   .banner__intro {
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 50%;
     width: 100%;
     text-align: center;
     transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    font-size: 1.25em;
+    visibility: hidden; }
+
+.button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: 4.0625em;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 0.9375em 2.1875em;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #f83876 0%, #d4326d 100%);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none; }
+
+.info {
+  background: #5F3C76; }
+  .info__title {
+    text-align: center;
+    margin: 0; }
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.first {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  text-align: center; }
+  @media (min-width: 800px) {
+    .first {
+      width: 23.72881%;
+      float: left;
+      margin-right: 1.69492%; } }
+
+.second {
+  width: 49.15254%;
+  float: right;
+  margin-right: 0;
+  text-align: center; }
+  @media (min-width: 800px) {
+    .second {
+      width: 23.72881%;
+      float: left;
+      margin-right: 1.69492%; } }
+
+.third {
+  width: 49.15254%;
+  float: right;
+  margin-right: 0;
+  text-align: center; }
+  @media (min-width: 800px) {
+    .third {
+      width: 23.72881%;
+      float: left;
+      margin-right: 1.69492%; } }
+
+.fourth {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  text-align: center; }
+  @media (min-width: 800px) {
+    .fourth {
+      width: 23.72881%;
+      float: right;
+      margin-right: 0; } }
+
+.learn {
+  fill: #d4326d; }
+  .learn__title {
+    color: #EDDC2B; }
+  .learn__text {
     color: #fff; }
+
+.create {
+  fill: #EDDC2B; }
+  .create__title {
+    color: #d4326d; }
+  .create__text {
+    color: #fff; }
+
+.share {
+  fill: #d4326d; }
+  .share__title {
+    color: #EDDC2B; }
+  .share__text {
+    color: #fff; }
+
+.connect {
+  fill: #EDDC2B; }
+  .connect__title {
+    color: #d4326d; }
+  .connect__text {
+    color: #fff; }
+
+.p {
+  font-family: font-family--primary;
+  padding: 0.3125em;
+  line-height: 1.2;
+  font-size: 1.25em; }
+
+.h {
+  text-transform: uppercase;
+  font-size: 1.375em; }
+
+svg {
+  transition: all .5s ease-in-out; }
+
+svg:hover {
+  fill: #CB5239;
+  transform: scale(1.4); }
 
 /*# sourceMappingURL=application.css.map */
