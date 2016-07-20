@@ -434,16 +434,29 @@ html {
   border-radius: 5px;
   text-decoration: none; }
 
+/* info svg section */
 .info {
   background: #5F3C76; }
-  .info__title {
+
+.contain {
+  background: #655;
+  padding: 0.625em; }
+  .contain__title {
     text-align: center;
-    margin: 0; }
+    font-size: 2.1875em;
+    margin: 0;
+    color: #fff; }
+
+.contain > div {
+  background: #CB5239;
+  border-radius: 0.9375em;
+  padding: 0.3125em; }
 
 .container {
   max-width: 100%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-top: 1.875em; }
   .container:after {
     content: " ";
     display: block;

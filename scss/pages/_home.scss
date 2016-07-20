@@ -83,17 +83,33 @@
   text-decoration: none;
 }
 
+/* info svg section */
+
 .info {
   background: $color-primary;
+}
+
+.contain {
+  background: #655;
+  padding: em(10px);
 
   &__title {
     text-align: center;
+    font-size: em(35px);
     margin: 0;
+    color: $white;
   }
+}
+
+.contain > div {
+  background: $highlight;
+  border-radius: em(15px);
+  padding: em(5px);
 }
 
 .container {
   @include container;
+  margin-top: em(30px);
 }
 
 .first {
