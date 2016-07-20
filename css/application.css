@@ -465,7 +465,8 @@ html {
 
 /* info svg section */
 .info {
-  background: #5F3C76; }
+  background: #5F3C76;
+  padding: 0.625em; }
 
 .contain {
   background: #655;
@@ -579,5 +580,45 @@ svg {
 svg:hover {
   fill: #CB5239;
   transform: scale(1.4); }
+
+/* preview section */
+.preview {
+  background: #EDDC2B;
+  padding: 0.625em; }
+  @media (min-width: 800px) {
+    .preview {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      .preview:after {
+        content: " ";
+        display: block;
+        clear: both; } }
+  .preview__image {
+    max-width: 100%;
+    display: block;
+    margin: 10px auto;
+    border: 3px solid #fff; }
+    @media (min-width: 800px) {
+      .preview__image {
+        width: 49.15254%;
+        float: left;
+        margin-right: 1.69492%; } }
+  .preview__text {
+    font-size: 1.25em;
+    color: #fff; }
+
+.prev {
+  padding: 0.9375em;
+  max-width: 100%;
+  background: #5F3C76;
+  border: 3px solid #CB5239;
+  margin: 10px auto;
+  display: flex; }
+  @media (min-width: 800px) {
+    .prev {
+      width: 49.15254%;
+      float: right;
+      margin-right: 0; } }
 
 /*# sourceMappingURL=application.css.map */
