@@ -370,19 +370,27 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+.logo {
+  text-align: center; }
+
 .navbar {
-  background: #CB5239; }
+  border: 2px solid #CB5239; }
 
 .nav {
   background: #EDDC2B;
   padding-left: 0;
-  margin: 5px 0;
+  margin: 0;
   text-align: center; }
   .nav__item {
     list-style-type: none;
     text-decoration: none;
-    padding: 0.625em 0;
+    padding: 0.3125em 0;
     border: 1px solid black; }
+    @media (min-width: 800px) {
+      .nav__item {
+        display: inline-block;
+        border: none;
+        padding: 1.25em; } }
     .nav__item a {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 1.125em;
@@ -409,6 +417,14 @@ html {
     font-size: 2.8125em;
     font-family: 'Oleo Script', cursive;
     color: #fff; }
+    @media (min-width: 800px) {
+      .banner__title {
+        top: 25%;
+        font-size: 3.75em; } }
+    @media (min-width: 950px) {
+      .banner__title {
+        top: 10%;
+        font-size: 5.3125em; } }
   .banner__intro {
     position: absolute;
     left: 50%;
@@ -417,8 +433,15 @@ html {
     text-align: center;
     transform: translateX(-50%) translateY(-50%);
     color: #fff;
-    font-size: 1.25em;
+    font-size: 1.875em;
     visibility: hidden; }
+    @media (min-width: 800px) {
+      .banner__intro {
+        visibility: visible; } }
+    @media (min-width: 950px) {
+      .banner__intro {
+        top: 35%;
+        font-size: 2.8125em; } }
 
 .button {
   position: absolute;
@@ -433,6 +456,12 @@ html {
   color: white;
   border-radius: 5px;
   text-decoration: none; }
+  @media (min-width: 800px) {
+    .button {
+      top: 65%; } }
+  @media (min-width: 950px) {
+    .button {
+      top: 52%; } }
 
 /* info svg section */
 .info {

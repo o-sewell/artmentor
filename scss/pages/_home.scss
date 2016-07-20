@@ -1,20 +1,28 @@
 
+.logo {
+  text-align: center;
+}
 .navbar {
-  background: $highlight;
+  border: 2px solid $highlight;
 }
 
 .nav {
   background: $color-secondary;
   padding-left: 0;
-  margin: 5px 0;
+  margin: 0;
   text-align: center;
-
 
   &__item {
     list-style-type: none;
     text-decoration: none;
-    padding: em(10px) 0;
+    padding: em(5px) 0;
     border: 1px solid black;
+
+    @media (min-width: 800px) {
+      display: inline-block;
+      border: none;
+      padding: em(20px);
+    }
 
     a {
       font-family: $font-family--primary;
@@ -52,6 +60,16 @@
   font-size: em(45px);
   font-family: 'Oleo Script', cursive;
   color: $white;
+
+  @media (min-width: 800px) {
+      top: 25%;
+      font-size: em(60px);
+    }
+
+  @media (min-width: 950px) {
+      top: 10%;
+      font-size: em(85px);
+    }
   }
 
   &__intro {
@@ -62,8 +80,17 @@
     text-align: center;
     transform: translateX(-50%) translateY(-50%);
     color: $white;
-    font-size: em(20px);
+    font-size: em(30px);
     visibility: hidden;
+
+    @media (min-width: 800px) {
+      visibility: visible;
+    }
+
+    @media (min-width: 950px) {
+      top: 35%;
+      font-size: em(45px);
+    }
   }
 }
 
@@ -81,6 +108,14 @@
   color: white;
   border-radius: 5px;
   text-decoration: none;
+
+  @media (min-width: 800px) {
+    top: 65%;
+  }
+
+  @media (min-width: 950px) {
+    top: 52%;
+  }
 }
 
 /* info svg section */
@@ -97,7 +132,7 @@
     text-align: center;
     font-size: em(35px);
     margin: 0;
-    color: $white;
+    color: $white
   }
 }
 
