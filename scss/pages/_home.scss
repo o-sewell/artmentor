@@ -293,7 +293,7 @@ svg:hover {
 }
 
 .testimonials {
-  background: url('../testimonials.jpeg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('../testimonials.jpeg');
   background-size: cover;
   padding: em(10px);
 
