@@ -625,11 +625,26 @@ svg:hover {
   background-size: cover;
   padding: 0.625em; }
   .testimonials__text {
-    text-align: center;
     display: block;
     color: white;
     font-size: 1.25em;
     padding: 0.3125em; }
+  .testimonials__author {
+    font-style: italic;
+    color: #EDDC2B; }
+
+blockquote {
+  position: relative; }
+
+blockquote:before {
+  content: "\201C";
+  font-size: 50px;
+  display: block;
+  position: absolute;
+  color: #EDDC2B;
+  padding: 5px;
+  top: -20px;
+  left: -20px; }
 
 /* footer */
 .footer {
