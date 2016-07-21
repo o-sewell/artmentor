@@ -613,12 +613,51 @@ svg:hover {
   max-width: 100%;
   background: #5F3C76;
   border: 3px solid #CB5239;
-  margin: 10px auto;
-  display: flex; }
+  margin: 10px auto; }
   @media (min-width: 800px) {
     .prev {
       width: 49.15254%;
       float: right;
       margin-right: 0; } }
+
+.testimonials {
+  background: url("../testimonials.jpeg");
+  background-size: cover;
+  padding: 0.625em; }
+  .testimonials__text {
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: 1.25em;
+    padding: 0.3125em; }
+
+/* footer */
+.footer {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: #5F3C76;
+  padding: 0.3125em; }
+  .footer:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .footer__logo {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    margin: 0;
+    font-size: 1.25em;
+    font-family: 'Oleo Script', cursive;
+    color: #fff; }
+  .footer__text {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+    margin: 0;
+    font-size: 0.625em;
+    color: #CB5239;
+    padding: 0.5625em 0; }
 
 /*# sourceMappingURL=application.css.map */
