@@ -338,7 +338,7 @@ blockquote:before {
   padding: em(5px);
 
   &__logo {
-    @include span(6 of 12);
+    @include span(4 of 12);
     margin: 0;
     font-size: em(20px);
     font-family: 'Oleo Script', cursive;
@@ -346,10 +346,17 @@ blockquote:before {
   }
 
   &__text {
-    @include span( 6 of 12 last);
+    @include span(4 of 12 last);
     margin: 0;
     font-size: em(10px);
     color: $highlight;
     padding: em(9px) 0;
+  }
+
+  &__link {
+    @include span(4 of 12);
+    color: lighten($grey, 20%);
+    padding: em(5px) 0;
+    font-size: em(12px);
   }
 }

@@ -662,7 +662,7 @@ blockquote:before {
     display: block;
     clear: both; }
   .footer__logo {
-    width: 49.15254%;
+    width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
     margin: 0;
@@ -670,12 +670,19 @@ blockquote:before {
     font-family: 'Oleo Script', cursive;
     color: #fff; }
   .footer__text {
-    width: 49.15254%;
+    width: 32.20339%;
     float: right;
     margin-right: 0;
     margin: 0;
     font-size: 0.625em;
     color: #CB5239;
     padding: 0.5625em 0; }
+  .footer__link {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    color: #aeb1b4;
+    padding: 0.3125em 0;
+    font-size: 0.75em; }
 
 /*# sourceMappingURL=application.css.map */
