@@ -256,6 +256,7 @@ svg:hover {
 .preview {
   background: $color-secondary;
   padding: em(10px);
+  position: relative;
 
 
   @media (min-width: 800px) {
@@ -277,6 +278,10 @@ svg:hover {
     font-size: em(20px);
     color: $white;
 
+  }
+
+  &__smile {
+    fill: $color-secondary;
   }
 }
 

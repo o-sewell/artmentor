@@ -584,7 +584,8 @@ svg:hover {
 /* preview section */
 .preview {
   background: #EDDC2B;
-  padding: 0.625em; }
+  padding: 0.625em;
+  position: relative; }
   @media (min-width: 800px) {
     .preview {
       max-width: 100%;
@@ -607,6 +608,8 @@ svg:hover {
   .preview__text {
     font-size: 1.25em;
     color: #fff; }
+  .preview__smile {
+    fill: #EDDC2B; }
 
 .prev {
   padding: 0.9375em;
