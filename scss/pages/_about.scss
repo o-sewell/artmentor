@@ -1,0 +1,65 @@
+.aboutus {
+  background: $highlight;
+}
+
+.about {
+  padding: em(30px);
+
+  @media (min-width: 800px) {
+      @include container;
+  }
+
+  &__image {
+    @media (min-width: 800px) {
+        @include span(6 of 12);
+    }
+
+    img {
+      height: em(200px);
+      width: em(200px);
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+      border: 5px solid $color-primary;
+      transition: transform .5s ease-in-out;
+
+      @media (min-width: 800px) {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+
+        @media (min-width: 800px) {
+          transform: none;
+        }
+
+      }
+    }
+  }
+
+  &__text {
+    padding: em(10px);
+    margin: em(30px);
+    background: $color-primary;
+    @media (min-width: 800px) {
+      @include span(6 of 12 last);
+      margin: 0;
+    }
+
+    p {
+      color: $white;
+      font-size: em(20px);
+      font-family: $font-family--primary;
+      @media (min-width: 800px) {
+        font-size: em(23px);
+      }
+
+      @media (min-width: 950px) {
+        font-size: em(30px);
+      }
+    }
+  }
+}
