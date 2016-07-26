@@ -751,4 +751,64 @@ blockquote:before {
         .about__text p {
           font-size: 1.875em; } }
 
+.ourcourses {
+  background: #5F3C76; }
+
+@media (min-width: 800px) {
+  .courses {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    .courses:after {
+      content: " ";
+      display: block;
+      clear: both; } }
+
+.courses__title {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5em;
+  border: 2px solid red;
+  margin: 20px 0; }
+
+.courses__image {
+  max-width: 100%;
+  padding: 1.25em 1.875em; }
+  @media (min-width: 800px) {
+    .courses__image {
+      width: 49.15254%;
+      float: left;
+      margin-right: 1.69492%; } }
+
+.courses img {
+  max-width: 100%;
+  width: 25em;
+  height: 17.5em;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #EDDC2B; }
+
+.courses__text {
+  max-width: 100%;
+  width: 27.5em;
+  padding: 0.625em 1.25em;
+  margin: 0 auto; }
+  @media (min-width: 800px) {
+    .courses__text {
+      width: 49.15254%;
+      float: right;
+      margin-right: 0;
+      padding-right: 100px;
+      padding-top: 35px; } }
+  .courses__text p {
+    color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: justify; }
+    @media (min-width: 800px) {
+      .courses__text p {
+        font-size: 1.25em; } }
+
+.footerc {
+  background: #EDDC2B; }
+
 /*# sourceMappingURL=application.css.map */

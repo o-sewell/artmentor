@@ -1,0 +1,67 @@
+.ourcourses {
+  background: $color-primary;
+}
+
+.courses {
+
+  @media (min-width: 800px) {
+      @include container;
+  }
+
+  &__title {
+    text-align: center;
+    color: $white;
+    font-size: em(40px);
+    border: 2px solid red;
+    margin: 20px 0;
+  }
+
+  &__image {
+    max-width: 100%;
+    padding: em(20px) em(30px);
+
+    @media (min-width: 800px) {
+        @include span(6 of 12);
+    }
+
+  }
+
+  img {
+    max-width: 100%;
+    width: em(400px);
+    height: em(280px);
+    display: block;
+    margin: 0 auto;
+    border: 2px solid $color-secondary;
+
+    @media (min-width: 800px) {
+
+    }
+  }
+
+  &__text {
+    max-width: 100%;
+    width: em(440px);
+    padding: em(10px) em(20px);
+    margin: 0 auto;
+
+    @media (min-width: 800px) {
+        @include span(6 of 12 last);
+        padding-right: 100px;
+        padding-top: 35px;
+    }
+
+    p {
+      color: $white;
+      font-family: $font-family--primary;
+      text-align: justify;
+      @media (min-width: 800px) {
+          font-size: em(20px);
+      }
+    }
+  }
+}
+
+.footerc {
+  background: $color-secondary;
+}
