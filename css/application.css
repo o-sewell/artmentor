@@ -370,6 +370,14 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+body {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh; }
+
+main {
+  flex: 1; }
+
 .logo {
   text-align: center; }
 
