@@ -1,0 +1,56 @@
+.artgallery {
+  background: $color-secondary;
+
+  &__title {
+    background: $color-primary;
+    padding: em(10px) 0;
+    margin: 0;
+    text-align: center;
+    color: $white;
+    font-family: 'Oleo Script', cursive;
+    font-size: em(40px);
+  }
+
+  &__image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    padding: em(10px) em(5px);
+  }
+}
+
+.image1 {
+  @include span(6 of 12);
+  text-align: center;
+
+  @media(min-width:800px) {
+    @include span(3 of 12);
+  }
+}
+
+.image2 {
+  @include span(6 of 12 last);
+  text-align: center;
+
+  @media(min-width:800px) {
+    @include span(3 of 12);
+  }
+}
+
+.image3 {
+  @include span(6 of 12);
+  text-align: center;
+
+  @media(min-width:800px) {
+    @include span(3 of 12);
+  }
+}
+
+.image4 {
+  @include span(6 of 12 last);
+  text-align: center;
+
+  @media(min-width:800px) {
+    @include span(3 of 12 last);
+  }
+}
