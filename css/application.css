@@ -752,7 +752,8 @@ blockquote:before {
           font-size: 1.875em; } }
 
 .ourcourses {
-  background: #5F3C76; }
+  background: #5F3C76;
+  padding-bottom: 1.25em; }
 
 @media (min-width: 800px) {
   .courses {
@@ -767,9 +768,10 @@ blockquote:before {
 .courses__title {
   text-align: center;
   color: #fff;
-  font-size: 2.5em;
-  border: 2px solid red;
-  margin: 20px 0; }
+  font-size: 3.125em;
+  margin: 20px 0;
+  font-family: 'Oleo Script', cursive;
+  text-decoration: underline; }
 
 .courses__image {
   max-width: 100%;
@@ -779,14 +781,17 @@ blockquote:before {
       width: 49.15254%;
       float: left;
       margin-right: 1.69492%; } }
-
-.courses img {
-  max-width: 100%;
-  width: 25em;
-  height: 17.5em;
-  display: block;
-  margin: 0 auto;
-  border: 2px solid #EDDC2B; }
+  .courses__image img {
+    max-width: 100%;
+    width: 25em;
+    height: 17.5em;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #EDDC2B;
+    transition: all 0.7s ease-in-out; }
+    .courses__image img:hover {
+      border-color: red;
+      transform: scale(1.1); }
 
 .courses__text {
   max-width: 100%;
@@ -798,15 +803,15 @@ blockquote:before {
       width: 49.15254%;
       float: right;
       margin-right: 0;
-      padding-right: 100px;
-      padding-top: 35px; } }
+      padding-top: 0;
+      padding-right: 6.25em; } }
   .courses__text p {
     color: #fff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: justify; }
     @media (min-width: 800px) {
       .courses__text p {
-        font-size: 1.25em; } }
+        font-size: 1.5625em; } }
 
 .footerc {
   background: #EDDC2B; }

@@ -1,5 +1,6 @@
 .ourcourses {
   background: $color-primary;
+  padding-bottom: em(20px);
 }
 
 .courses {
@@ -11,9 +12,10 @@
   &__title {
     text-align: center;
     color: $white;
-    font-size: em(40px);
-    border: 2px solid red;
+    font-size: em(50px);
     margin: 20px 0;
+    font-family: 'Oleo Script', cursive;
+    text-decoration: underline;
   }
 
   &__image {
@@ -24,19 +26,22 @@
         @include span(6 of 12);
     }
 
-  }
 
-  img {
-    max-width: 100%;
-    width: em(400px);
-    height: em(280px);
-    display: block;
-    margin: 0 auto;
-    border: 2px solid $color-secondary;
+    img {
+      max-width: 100%;
+      width: em(400px);
+      height: em(280px);
+      display: block;
+      margin: 0 auto;
+      border: 5px solid $color-secondary;
+      transition: all 0.7s ease-in-out;
 
-    @media (min-width: 800px) {
-
+      &:hover {
+        border-color: red;
+        transform: scale(1.1);
+      }
     }
+
   }
 
   &__text {
@@ -47,8 +52,8 @@
 
     @media (min-width: 800px) {
         @include span(6 of 12 last);
-        padding-right: 100px;
-        padding-top: 35px;
+        padding-top: 0;
+        padding-right: em(100px);
     }
 
     p {
@@ -56,7 +61,7 @@
       font-family: $font-family--primary;
       text-align: justify;
       @media (min-width: 800px) {
-          font-size: em(20px);
+          font-size: em(25px);
       }
     }
   }
