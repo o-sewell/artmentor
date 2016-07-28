@@ -876,4 +876,49 @@ blockquote:before {
       float: right;
       margin-right: 0; } }
 
+.contact {
+  background: #CB5239; }
+  .contact__title {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Oleo Script', cursive;
+    color: #fff; }
+
+form {
+  max-width: 18.75em;
+  margin: 30px auto;
+  padding: 10px 20px;
+  background: #5F3C76;
+  border-radius: 8px; }
+  @media (min-width: 800px) {
+    form {
+      max-width: 80%;
+      padding: 0.625em 6.25em; } }
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.3125em;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 1.25em; }
+
+input[type="radio"] {
+  margin: 0.3125em 0.625em; }
+
+label {
+  font-size: 1.25em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: lightgrey; }
+
+.submit {
+  padding: 1.875em;
+  background: red;
+  width: 100%;
+  color: grey;
+  background: #EDDC2B;
+  font-size: 1.25em;
+  margin-bottom: 1.875em; }
+
 /*# sourceMappingURL=application.css.map */
